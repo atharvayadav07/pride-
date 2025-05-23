@@ -1,0 +1,4 @@
+my_list <- list(name="Atharva", age=25, scores=c(85, 90, 88))
+print(my_list)
+print(my_list$name)
+
