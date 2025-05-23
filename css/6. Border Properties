@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Border Properties</title>
+  <style>
+    .border-box {
+      border: 4px dashed #ff5733;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>6. Border Properties</h2>
+  <div class="border-box">
+    This box has a dashed orange border.
+  </div>
+
+</body>
+</html>
