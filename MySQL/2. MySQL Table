@@ -1,0 +1,14 @@
+-- Creating a student table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Grade VARCHAR(10)
+);
+
+-- Insert data into the table
+INSERT INTO Students (StudentID, Name, Age, Grade)
+VALUES (1, 'Atharva', 18, 'A');
+
+-- View data
+SELECT * FROM Students;
