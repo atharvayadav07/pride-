@@ -1,0 +1,3 @@
+<?php
+echo str_repeat("Hi! ", 3); // Output: Hi! Hi! Hi!
+?>
