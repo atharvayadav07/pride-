@@ -1,0 +1,4 @@
+<?php
+$str = "Hello PHP World!";
+echo "Words: " . str_word_count($str); // Output: 3
+?>
