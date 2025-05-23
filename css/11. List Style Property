@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Style Property</title>
+  <style>
+    ul.custom-bullets {
+      list-style-type: square; /* square bullets */
+      color: #2a9d8f;
+      font-size: 18px;
+    }
+
+    ol.custom-numbers {
+      list-style-type: upper-roman; /* Roman numerals */
+      color: #e76f51;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>11. List Style Property</h2>
+
+  <h3>Unordered List with Square Bullets</h3>
+  <ul class="custom-bullets">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h3>Ordered List with Roman Numerals</h3>
+  <ol class="custom-numbers">
+    <li>Introduction</li>
+    <li>Basics</li>
+    <li>Advanced</li>
+  </ol>
+
+</body>
+</html>
