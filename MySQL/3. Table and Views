@@ -1,0 +1,13 @@
+-- Create a table
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(50),
+    Credits INT
+);
+
+-- Create a view
+CREATE VIEW HighCreditCourses AS
+SELECT * FROM Courses WHERE Credits > 3;
+
+-- Use the view
+SELECT * FROM HighCreditCourses;
