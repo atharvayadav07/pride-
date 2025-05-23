@@ -1,0 +1,16 @@
+<?php
+$a = 10; // Variable
+$b = 5;
+
+// Arithmetic Operators
+echo "Addition: " . ($a + $b) . "<br>";
+echo "Subtraction: " . ($a - $b) . "<br>";
+echo "Multiplication: " . ($a * $b) . "<br>";
+echo "Division: " . ($a / $b) . "<br>";
+
+// Comparison Operator
+var_dump($a > $b); // true
+
+// Logical Operator
+var_dump($a > 0 && $b > 0); // true
+?>
