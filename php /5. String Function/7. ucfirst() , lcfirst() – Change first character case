@@ -1,0 +1,4 @@
+<?php
+echo ucfirst("php is awesome");  // Output: Php is awesome
+echo lcfirst("PHP Is Awesome");  // Output: pHP Is Awesome
+?>
