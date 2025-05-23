@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Font & Display Properties</title>
+  <style>
+    .font-style {
+      font-family: 'Georgia', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #264653;
+      margin-bottom: 20px;
+    }
+
+    .display-block {
+      display: block;
+      background-color: #e76f51;
+      color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .display-inline {
+      display: inline;
+      background-color: #2a9d8f;
+      color: white;
+      padding: 10px;
+      margin-right: 5px;
+    }
+
+    .display-inline-block {
+      display: inline-block;
+      background-color: #f4a261;
+      color: white;
+      padding: 10px;
+      width: 150px;
+      text-align: center;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>10. Font & Display Properties</h2>
+
+  <p class="font-style">This text uses Georgia font, size 22px, and semi-bold.</p>
+
+  <div class="display-block">Display: block (full width)</div>
+  <div class="display-inline">Display: inline</div>
+  <div class="display-inline-block">Display: inline-block</div>
+
+</body>
+</html>
