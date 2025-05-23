@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>Image and Link</title></head>
+<body>
+  <a href="https://www.openai.com" target="_blank">
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+  </a>
+</body>
+</html>
