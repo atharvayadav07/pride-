@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tool Tip Text Property</title>
+  <style>
+    .tooltip {
+      border-bottom: 1px dotted black; /* underline style */
+      cursor: help;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>17. Tool Tip Text Property</h2>
+
+  <p>
+    Hover over the 
+    <span class="tooltip" title="This is a tooltip text!">highlighted text</span> 
+    to see the tooltip.
+  </p>
+
+</body>
+</html>
