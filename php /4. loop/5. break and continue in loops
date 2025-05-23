@@ -1,0 +1,17 @@
+<?php
+echo "Break Example:<br>";
+for ($i = 1; $i <= 10; $i++) {
+    if ($i == 6) {
+        break; // Exit the loop when i is 6
+    }
+    echo "Count: $i<br>";
+}
+
+echo "<br>Continue Example:<br>";
+for ($i = 1; $i <= 5; $i++) {
+    if ($i == 3) {
+        continue; // Skip the rest of this iteration when i is 3
+    }
+    echo "Count: $i<br>";
+}
+?>
