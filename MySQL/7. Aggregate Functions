@@ -1,0 +1,14 @@
+-- COUNT
+SELECT COUNT(*) AS TotalStudents FROM Students;
+
+-- AVG
+SELECT AVG(Age) AS AverageAge FROM Students;
+
+-- MAX
+SELECT MAX(Age) AS OldestStudent FROM Students;
+
+-- MIN
+SELECT MIN(Age) AS YoungestStudent FROM Students;
+
+-- SUM (example with credits)
+SELECT SUM(Credits) AS TotalCredits FROM Courses;
