@@ -1,0 +1,5 @@
+ggplot(data, aes(x=x, y=y)) +
+  geom_line(color="blue") +
+  geom_point(size=4, shape=21, fill="red") +
+  labs(title="Line Chart", x="X Axis", y="Y Axis") +
+  theme_minimal()
