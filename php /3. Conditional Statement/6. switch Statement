@@ -1,0 +1,17 @@
+<?php
+$day = "Tuesday";
+
+switch ($day) {
+    case "Monday":
+        echo "Start of the week!";
+        break;
+    case "Tuesday":
+        echo "Second day of the week.";
+        break;
+    case "Friday":
+        echo "Almost weekend!";
+        break;
+    default:
+        echo "It's just another day.";
+}
+?>
