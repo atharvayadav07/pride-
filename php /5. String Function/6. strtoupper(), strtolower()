@@ -1,0 +1,4 @@
+<?php
+echo strtoupper("hello"); // Output: HELLO
+echo strtolower("WORLD"); // Output: world
+?>
