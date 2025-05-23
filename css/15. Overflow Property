@@ -1,0 +1,47 @@
+Description:
+The overflow property controls what happens when content inside a box overflows its set size. Common values:
+
+visible (default, content spills out)
+
+hidden (content is clipped)
+
+scroll (scrollbars appear)
+
+auto (scrollbars appear only if needed)
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overflow Property</title>
+  <style>
+    .overflow-box {
+      width: 300px;
+      height: 100px;
+      border: 2px solid #f94144;
+      padding: 10px;
+      overflow: auto;
+      background-color: #f9c74f;
+    }
+
+    .content {
+      width: 500px;
+      height: 150px;
+      background-color: #f3722c;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>15. Overflow Property</h2>
+
+  <div class="overflow-box">
+    <div class="content">
+      This content is bigger than the container, so scrollbars appear because overflow is set to auto.
+    </div>
+  </div>
+
+</body>
+</html>
