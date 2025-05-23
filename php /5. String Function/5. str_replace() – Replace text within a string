@@ -1,0 +1,4 @@
+<?php
+$str = "I love Java.";
+echo str_replace("Java", "PHP", $str); // Output: I love PHP.
+?>
