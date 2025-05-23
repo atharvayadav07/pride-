@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Height & Width</title>
+  <style>
+    .box {
+      width: 250px;
+      height: 150px;
+      background-color: #f9c74f;
+      border: 2px solid #f9844a;
+      padding: 10px;
+      text-align: center;
+      line-height: 150px; /* vertically center text */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>8. Height & Width</h2>
+  <div class="box">
+    Width: 250px, Height: 150px
+  </div>
+
+</body>
+</html>
