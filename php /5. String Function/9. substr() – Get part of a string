@@ -1,0 +1,4 @@
+<?php
+$str = "OpenAI GPT";
+echo substr($str, 0, 6); // Output: OpenAI
+?>
