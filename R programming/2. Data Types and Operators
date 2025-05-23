@@ -1,0 +1,14 @@
+# Data types
+num <- 10.5
+int <- 10L
+char <- "Hello"
+logical_val <- TRUE
+
+# Operators
+x <- 10
+y <- 3
+add <- x + y
+div <- x / y
+mod <- x %% y
+exp <- x^y
+logical_op <- x > y
