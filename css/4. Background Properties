@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Properties</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+
+    .background-example {
+      background-image: url('https://via.placeholder.com/300');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      width: 100%;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>4. Background Properties</h2>
+  <p>This div has a background image, no repeat, centered, and sized to cover.</p>
+
+  <div class="background-example"></div>
+
+</body>
+</html>
