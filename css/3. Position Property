@@ -1,0 +1,66 @@
+ Description:
+The position property controls how an element is positioned on the page. Common values:
+
+static (default)
+
+relative
+
+absolute
+
+fixed
+
+sticky
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Property</title>
+  <style>
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: #ffd166;
+      padding: 15px;
+      width: 200px;
+      border: 2px solid #f4a261;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: #06d6a0;
+      padding: 15px;
+      width: 180px;
+      border: 2px solid #1b9aaa;
+      color: white;
+    }
+
+    .container {
+      position: relative;
+      height: 200px;
+      border: 2px solid #555;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>13. Position Property</h2>
+
+  <div class="relative-box">
+    This box is <strong>relative</strong> positioned (offset from normal position).
+  </div>
+
+  <div class="container">
+    <div class="absolute-box">
+      This box is <strong>absolute</strong> positioned inside container.
+    </div>
+  </div>
+
+</body>
+</html>
