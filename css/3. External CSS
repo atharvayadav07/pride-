@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <p>This is a blue paragraph using external CSS.</p>
+
+</body>
+</html>
