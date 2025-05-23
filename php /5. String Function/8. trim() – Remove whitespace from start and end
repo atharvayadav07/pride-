@@ -1,0 +1,4 @@
+<?php
+$name = "  Atharva  ";
+echo "Hello, " . trim($name); // Output: Hello, Atharva
+?>
