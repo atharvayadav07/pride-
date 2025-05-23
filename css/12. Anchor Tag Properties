@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anchor Tag Properties</title>
+  <style>
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ff5733;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #551a8b;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>12. Anchor Tag Properties</h2>
+  <p>
+    Visit 
+    <a href="https://www.example.com" target="_blank">Example.com</a> 
+    for more info.
+  </p>
+
+</body>
+</html>
