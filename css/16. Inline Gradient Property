@@ -1,0 +1,32 @@
+Description:
+You can use CSS gradients to create smooth color transitions. The background or background-image property can be set to a linear or radial gradient.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline Gradient Property</title>
+  <style>
+    .gradient-box {
+      width: 300px;
+      height: 150px;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      border: 2px solid #ff6f91;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>16. Inline Gradient Property</h2>
+
+  <div class="gradient-box">
+    Linear Gradient Background
+  </div>
+
+</body>
+</html>
