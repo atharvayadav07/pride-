@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Formatting</title>
+  <style>
+    .formatted-text {
+      font-weight: bold;       /* Bold */
+      font-style: italic;      /* Italic */
+      text-decoration: underline; /* Underline */
+      text-transform: uppercase;  /* Uppercase */
+      color: #2a9d8f;          /* Text color */
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>9. Text Formatting</h2>
+  <p class="formatted-text">
+    This text is bold, italic, underlined, uppercase, and colored.
+  </p>
+
+</body>
+</html>
