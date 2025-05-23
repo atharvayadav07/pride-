@@ -1,0 +1,8 @@
+-- Using WHERE with conditions
+SELECT * FROM Students WHERE Age > 17 AND Grade = 'A';
+
+-- Using BETWEEN
+SELECT * FROM Students WHERE Age BETWEEN 16 AND 19;
+
+-- Using IN
+SELECT * FROM Students WHERE Grade IN ('A', 'B');
