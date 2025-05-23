@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ID and Class Example</title>
+  <style>
+    /* ID selector */
+    #unique-box {
+      background-color: lightblue;
+      padding: 15px;
+      border: 2px solid blue;
+    }
+
+    /* Class selector */
+    .common-style {
+      font-family: Arial, sans-serif;
+      color: darkgreen;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>5. ID & CLASS</h2>
+
+  <div id="unique-box">
+    This div uses an <strong>ID</strong> for unique styling.
+  </div>
+
+  <p class="common-style">This paragraph uses a <strong>class</strong> for reusable styling.</p>
+  <p class="common-style">This is another paragraph with the same class.</p>
+
+</body>
+</html>
