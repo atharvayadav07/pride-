@@ -1,0 +1,8 @@
+<?php
+echo "Do...While Loop:<br>";
+$k = 1;
+do {
+    echo "Count: $k<br>";
+    $k++;
+} while ($k <= 5);
+?>
