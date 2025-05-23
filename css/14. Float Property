@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Float Property</title>
+  <style>
+    .float-left {
+      float: left;
+      width: 150px;
+      height: 150px;
+      margin-right: 15px;
+      background-color: #90be6d;
+      border: 2px solid #43aa8b;
+      text-align: center;
+      line-height: 150px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .content {
+      font-size: 16px;
+      line-height: 1.6;
+      overflow: hidden; /* Clear floats */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>14. Float Property</h2>
+
+  <div class="float-left">Floated Box</div>
+  <div class="content">
+    <p>
+      This text wraps around the floated box. Using float left makes the box float to the left and text flows on the right side. Float is often used for images or layouts.
+    </p>
+  </div>
+
+</body>
+</html>
