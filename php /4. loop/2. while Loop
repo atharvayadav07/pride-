@@ -1,0 +1,8 @@
+<?php
+echo "While Loop:<br>";
+$j = 1;
+while ($j <= 5) {
+    echo "Count: $j<br>";
+    $j++;
+}
+?>
