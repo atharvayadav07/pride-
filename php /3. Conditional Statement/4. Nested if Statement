@@ -1,0 +1,14 @@
+<?php
+$age = 25;
+$hasLicense = true;
+
+if ($age >= 18) {
+    if ($hasLicense) {
+        echo "You can drive.";
+    } else {
+        echo "You need a driving license.";
+    }
+} else {
+    echo "You are too young to drive.";
+}
+?>
