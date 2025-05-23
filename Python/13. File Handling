@@ -1,0 +1,7 @@
+# Write to file
+with open("demo.txt", "w") as f:
+    f.write("Hello file!")
+
+# Read from file
+with open("demo.txt", "r") as f:
+    print(f.read())
