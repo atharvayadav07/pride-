@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Margin Properties</title>
+  <style>
+    .margin-box {
+      background-color: #cce7ff;
+      margin: 40px 20px 10px 50px; /* top right bottom left */
+      padding: 15px;
+      border: 2px solid #3399ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>7. Margin Properties</h2>
+  <div class="margin-box">
+    This box has margins: 40px top, 20px right, 10px bottom, and 50px left.
+  </div>
+
+</body>
+</html>
