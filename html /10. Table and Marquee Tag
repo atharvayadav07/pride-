@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Table & Marquee</title></head>
+<body>
+  <marquee behavior="scroll" direction="left">Welcome to the HTML Tutorial!</marquee>
+
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>Subject</th><th>Marks</th>
+    </tr>
+    <tr>
+      <td>HTML</td><td>90</td>
+    </tr>
+    <tr>
+      <td>CSS</td><td>85</td>
+    </tr>
+  </table>
+</body>
+</html>
