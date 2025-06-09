@@ -1,0 +1,6 @@
+project_folder/
+├── db.php
+├── create.php
+├── read.php
+├── update.php
+└── delete.php
