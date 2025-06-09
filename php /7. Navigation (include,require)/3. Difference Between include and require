@@ -1,0 +1,4 @@
+| Feature             | `include`         | `require`             |
+| ------------------- | ----------------- | --------------------- |
+| On Missing File     | Shows **Warning** | Shows **Fatal Error** |
+| Continues Execution | ✅ Yes             | ❌ No               |
