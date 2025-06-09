@@ -1,0 +1,7 @@
+<?php
+function square($num) {
+    return $num * $num;
+}
+$result = square(5);
+echo $result; // Output: 25
+?>
