@@ -1,0 +1,8 @@
+<?php
+$marks = array(
+    "Atharva" => array(90, 85, 88),
+    "Aman" => array(70, 75, 80)
+);
+
+echo $marks["Atharva"][1];  // Output: 85
+?>
