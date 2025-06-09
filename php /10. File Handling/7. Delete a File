@@ -1,0 +1,8 @@
+<?php
+if (file_exists("demo.txt")) {
+    unlink("demo.txt");
+    echo "File deleted.";
+} else {
+    echo "File doesn't exist.";
+}
+?>
