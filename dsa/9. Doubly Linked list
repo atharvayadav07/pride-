@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node *prev, *next;
+};
+
+// Create new node
+struct Node* createNode(int data) {
+    struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Insert at front
+void insertFront(struct Node** head, int data) {
+    struct Node* newNode = createNode(data);
+    newNode->next = *head;
+    if (*head != NULL)
+        (*head)->prev = newNode;
+    *head = newNode;
+}
+
+// Insert at end
+void insertEnd(struct Node** head, int data) {
+    struct Node* newNode = createNode(data);
+    if (*head == NULL) {
+        *head = newNode;
+        return;
+    }
+    struct Node* temp = *head;
+    while (temp->next != NULL)
+        temp = temp->next;
+    temp->next = newNode;
+    newNode->prev = temp;
+}
+
+// Delete a node
+void deleteNode(struct Node** head, int key) {
+    struct Node* temp = *head;
+    while (temp != NULL && temp->data != key)
+        temp = temp->next;
+    if (temp == NULL) return;
+
+    if (temp->prev != NULL)
+        temp->prev->next = temp->next;
+    else
+        *head = temp->next;
+
+    if (temp->next != NULL)
+        temp->next->prev = temp->prev;
+
+    free(temp);
+}
+
+// Display DLL
+void display(struct Node* head) {
+    while (head != NULL) {
+        printf("%d <-> ", head->data);
+        head = head->next;
+    }
+    printf("NULL\n");
+}
+
+// Main
+int main() {
+    struct Node* head = NULL;
+    insertFront(&head, 20);
+    insertFront(&head, 10);
+    insertEnd(&head, 30);
+    display(head);  // 10 <-> 20 <-> 30 <-> NULL
+
+    deleteNode(&head, 20);
+    display(head);  // 10 <-> 30 <-> NULL
+    return 0;
+}
