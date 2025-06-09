@@ -1,0 +1,7 @@
+<?php
+$file = fopen("demo.txt", "w"); // 'w' = write mode
+if ($file) {
+    echo "File opened/created successfully.";
+    fclose($file);
+}
+?>
