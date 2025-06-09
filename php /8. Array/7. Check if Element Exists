@@ -1,0 +1,6 @@
+<?php
+$animals = ["Cat", "Dog", "Cow"];
+if (in_array("Dog", $animals)) {
+    echo "Dog is in the list.";
+}
+?>
