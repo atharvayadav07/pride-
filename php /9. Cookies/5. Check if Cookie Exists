@@ -1,0 +1,8 @@
+<?php
+if(!isset($_COOKIE["user"])) {
+    echo "Setting up cookie...";
+    setcookie("user", "Atharva", time() + 3600);
+} else {
+    echo "Cookie already exists: " . $_COOKIE["user"];
+}
+?>
