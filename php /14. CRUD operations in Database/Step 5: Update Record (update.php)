@@ -1,0 +1,26 @@
+<?php include 'db.php';
+
+$id = $_GET['id'];
+$result = mysqli_query($conn, "SELECT * FROM users WHERE id=$id");
+$data = mysqli_fetch_assoc($result);
+?>
+
+<form method="POST">
+    Name: <input type="text" name="name" value="<?= $data['name'] ?>" required><br>
+    Email: <input type="email" name="email" value="<?= $data['email'] ?>" required><br>
+    <button type="submit">Update</button>
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    $sql = "UPDATE users SET name='$name', email='$email' WHERE id=$id";
+    if (mysqli_query($conn, $sql)) {
+        echo "User updated!";
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
+}
+?>
