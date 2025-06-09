@@ -1,0 +1,7 @@
+<?php
+$person = ["Name" => "Atharva", "Age" => 20, "City" => "Pune"];
+
+foreach ($person as $key => $value) {
+    echo "$key: $value<br>";
+}
+?>
