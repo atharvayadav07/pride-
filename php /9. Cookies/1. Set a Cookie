@@ -1,0 +1,9 @@
+<?php
+// Set cookie (name, value, expire time)
+setcookie("user", "Atharva", time() + (86400 * 7)); // Expires in 7 days
+?>
+<html>
+<body>
+<p>Cookie 'user' is set!</p>
+</body>
+</html>
