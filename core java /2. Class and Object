@@ -1,0 +1,40 @@
+// Define a class named Car
+public class Car {
+
+    // Fields (attributes) of the class
+    String color;      // Color of the car
+    String model;      // Model name of the car
+    int year;          // Manufacturing year
+
+    // Method (behavior) to display car details
+    public void displayInfo() {
+        System.out.println("Car Model: " + model);
+        System.out.println("Car Color: " + color);
+        System.out.println("Car Year: " + year);
+    }
+
+    // Main method to create objects and test the class
+    public static void main(String[] args) {
+        // Create an object (instance) of Car class named car1
+        Car car1 = new Car();
+
+        // Set values to car1's fields
+        car1.color = "Red";
+        car1.model = "Toyota Corolla";
+        car1.year = 2020;
+
+        // Call the method to display car1's info
+        car1.displayInfo();
+
+        // Create another Car object named car2
+        Car car2 = new Car();
+
+        // Set different values for car2
+        car2.color = "Blue";
+        car2.model = "Honda Civic";
+        car2.year = 2018;
+
+        // Display car2's details
+        car2.displayInfo();
+    }
+}
