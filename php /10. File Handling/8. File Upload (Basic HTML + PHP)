@@ -1,0 +1,16 @@
+📄 HTML Form (upload_form.html)
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select file to upload:
+  <input type="file" name="myFile">
+  <input type="submit" value="Upload">
+</form>
+
+
+🐘 PHP File (upload.php)
+<?php
+if (move_uploaded_file($_FILES["myFile"]["tmp_name"], "uploads/" . $_FILES["myFile"]["name"])) {
+    echo "File uploaded successfully.";
+} else {
+    echo "File upload failed.";
+}
+?>
