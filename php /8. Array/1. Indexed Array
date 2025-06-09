@@ -1,0 +1,6 @@
+<?php
+$fruits = array("Apple", "Banana", "Mango");
+
+echo $fruits[0];  // Output: Apple
+echo $fruits[2];  // Output: Mango
+?>
