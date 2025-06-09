@@ -1,0 +1,8 @@
+<!-- folder/header.php -->
+<h2>This is the header</h2>
+
+
+<!-- index.php -->
+<?php
+include 'folder/header.php';
+?>
