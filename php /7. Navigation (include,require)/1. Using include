@@ -1,2 +1,11 @@
 <!-- header.php -->
 <h1>Welcome to My Website</h1>
+
+
+<!-- home.php -->
+<?php
+include 'header.php';
+?>
+<p>This is the homepage content.</p>
+
+//If header.php is missing, include will show a warning, but the rest of the page will continue to load.
