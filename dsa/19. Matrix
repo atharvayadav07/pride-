@@ -1,0 +1,87 @@
+ Covered:
+Matrix creation
+
+Matrix input/output
+
+Matrix addition
+
+Matrix multiplication
+
+Transpose of matrix
+
+
+
+
+#include <stdio.h>
+
+#define ROWS 3
+#define COLS 3
+
+// Function to display matrix
+void displayMatrix(int matrix[ROWS][COLS]) {
+    for (int i=0; i<ROWS; i++) {
+        for (int j=0; j<COLS; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+// Matrix addition
+void addMatrices(int a[ROWS][COLS], int b[ROWS][COLS], int result[ROWS][COLS]) {
+    for (int i=0; i<ROWS; i++) {
+        for (int j=0; j<COLS; j++) {
+            result[i][j] = a[i][j] + b[i][j];
+        }
+    }
+}
+
+// Matrix multiplication
+void multiplyMatrices(int a[ROWS][COLS], int b[ROWS][COLS], int result[ROWS][COLS]) {
+    for (int i=0; i<ROWS; i++) {
+        for (int j=0; j<COLS; j++) {
+            result[i][j] = 0;
+            for (int k=0; k<COLS; k++) {
+                result[i][j] += a[i][k]*b[k][j];
+            }
+        }
+    }
+}
+
+// Transpose matrix
+void transposeMatrix(int matrix[ROWS][COLS], int result[ROWS][COLS]) {
+    for (int i=0; i<ROWS; i++) {
+        for (int j=0; j<COLS; j++) {
+            result[j][i] = matrix[i][j];
+        }
+    }
+}
+
+int main() {
+    int A[ROWS][COLS] = { {1,2,3}, {4,5,6}, {7,8,9} };
+    int B[ROWS][COLS] = { {9,8,7}, {6,5,4}, {3,2,1} };
+    int result[ROWS][COLS];
+
+    printf("Matrix A:\n");
+    displayMatrix(A);
+
+    printf("Matrix B:\n");
+    displayMatrix(B);
+
+    // Addition
+    addMatrices(A, B, result);
+    printf("Addition of A and B:\n");
+    displayMatrix(result);
+
+    // Multiplication
+    multiplyMatrices(A, B, result);
+    printf("Multiplication of A and B:\n");
+    displayMatrix(result);
+
+    // Transpose of A
+    transposeMatrix(A, result);
+    printf("Transpose of A:\n");
+    displayMatrix(result);
+
+    return 0;
+}
