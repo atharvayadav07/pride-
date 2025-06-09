@@ -1,0 +1,7 @@
+<?php
+if(file_exists("demo.txt")) {
+    echo "File exists.";
+} else {
+    echo "File not found.";
+}
+?>
