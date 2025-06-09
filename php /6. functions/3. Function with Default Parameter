@@ -1,0 +1,7 @@
+<?php
+function welcome($name = "Guest") {
+    echo "Welcome, $name!";
+}
+welcome();         // Output: Welcome, Guest!
+welcome("Atharva"); // Output: Welcome, Atharva!
+?>
