@@ -1,0 +1,90 @@
+ Topics Covered:
+🌐 What is Heap
+*Min Heap & Max Heap
+*Insert
+*Delete (Extract Min / Max)
+*Heapify
+*Build Heap
+
+🌐 What is a Heap?
+A Heap is a special binary tree:
+Complete Binary Tree
+Satisfies the Heap Property:
+Min Heap: Parent ≤ Children
+Max Heap: Parent ≥ Children
+
+#include <stdio.h>
+
+#define MAX 100
+
+int heap[MAX];
+int size = 0;
+
+// Swap utility
+void swap(int *a, int *b) {
+    int temp = *a; *a = *b; *b = temp;
+}
+
+// Heapify up
+void heapifyUp(int index) {
+    while (index != 0 && heap[(index - 1)/2] > heap[index]) {
+        swap(&heap[(index - 1)/2], &heap[index]);
+        index = (index - 1)/2;
+    }
+}
+
+// Insert in min heap
+void insert(int val) {
+    heap[size] = val;
+    heapifyUp(size);
+    size++;
+}
+
+// Heapify down
+void heapifyDown(int index) {
+    int smallest = index;
+    int left = 2*index + 1;
+    int right = 2*index + 2;
+
+    if (left < size && heap[left] < heap[smallest]) smallest = left;
+    if (right < size && heap[right] < heap[smallest]) smallest = right;
+
+    if (smallest != index) {
+        swap(&heap[index], &heap[smallest]);
+        heapifyDown(smallest);
+    }
+}
+
+// Extract min
+int extractMin() {
+    if (size <= 0) return -1;
+    if (size == 1) return heap[--size];
+
+    int root = heap[0];
+    heap[0] = heap[--size];
+    heapifyDown(0);
+    return root;
+}
+
+// Display heap
+void display() {
+    for (int i = 0; i < size; i++) printf("%d ", heap[i]);
+    printf("\n");
+}
+
+int main() {
+    insert(10);
+    insert(20);
+    insert(5);
+    insert(30);
+    insert(1);
+
+    printf("Heap: ");
+    display(); // 1 10 5 30 20
+
+    printf("Extract Min: %d\n", extractMin()); // 1
+    printf("After extraction: ");
+    display(); // 5 10 20 30
+
+    return 0;
+}
