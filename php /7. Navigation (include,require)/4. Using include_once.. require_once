@@ -1,0 +1,14 @@
+<!-- menu.php -->
+<ul>
+  <li>Home</li>
+  <li>About</li>
+</ul>
+
+
+
+
+<!-- page.php -->
+<?php
+include_once 'menu.php';  // Will include only once, even if called again
+include_once 'menu.php';  // This will be ignored
+?>
