@@ -1,0 +1,8 @@
+<?php
+function increase(&$value) {
+    $value++;
+}
+$num = 10;
+increase($num);
+echo $num;  // Output: 11
+?>
