@@ -1,0 +1,5 @@
+<?php
+// Modify cookie value
+setcookie("user", "AtharvaYadav", time() + (86400 * 7));
+echo "Cookie has been updated!";
+?>
