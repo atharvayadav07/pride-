@@ -1,0 +1,58 @@
+// Import Scanner class for user input
+import java.util.Scanner;
+
+// Define a public class named HelloWorld
+public class HelloWorld {
+
+    // Main method: Program execution starts here
+    public static void main(String[] args) {
+
+        // Print "Hello, World!" to the console
+        System.out.println("Hello, World!");
+
+        // Declare an integer variable named 'number' and assign value 10
+        int number = 10;
+
+        // Declare a double variable named 'pi' and assign value 3.1415
+        double pi = 3.1415;
+
+        // Declare a character variable named 'letter' and assign value 'A'
+        char letter = 'A';
+
+        // Declare a boolean variable named 'isJavaFun' and assign true
+        boolean isJavaFun = true;
+
+        // Declare a String variable named 'greeting' and assign text
+        String greeting = "Welcome to Java!";
+
+        // Print the value of integer 'number' to the console
+        System.out.println("Integer: " + number);
+
+        // Print the value of double 'pi' to the console
+        System.out.println("Double: " + pi);
+
+        // Print the value of char 'letter' to the console
+        System.out.println("Char: " + letter);
+
+        // Print the value of boolean 'isJavaFun' to the console
+        System.out.println("Boolean: " + isJavaFun);
+
+        // Print the value of String 'greeting' to the console
+        System.out.println("String: " + greeting);
+
+        // Create Scanner object 'scanner' to read input from the console
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt user to enter their name
+        System.out.print("Enter your name: ");
+
+        // Read the entire line input by user and store it in String variable 'name'
+        String name = scanner.nextLine();
+
+        // Print a greeting message including the entered name
+        System.out.println("Hello, " + name + "!");
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+    }
+}
