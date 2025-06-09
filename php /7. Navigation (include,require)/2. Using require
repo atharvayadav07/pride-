@@ -1,0 +1,14 @@
+<!-- config.php -->
+<?php
+$site_name = "My Cool Site";
+?>
+
+
+<!-- about.php -->
+<?php
+require 'config.php';
+echo "<h1>About - $site_name</h1>";
+?>
+<p>This is the about page.</p>
+
+// If config.php is missing, require will show a fatal error and stop execution.
