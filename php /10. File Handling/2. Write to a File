@@ -1,0 +1,5 @@
+<?php
+$file = fopen("demo.txt", "w");
+fwrite($file, "Hello Atharva!\nThis is file writing in PHP.");
+fclose($file);
+?>
