@@ -1,0 +1,52 @@
+✅ Step 1: Basic Email Send Code
+
+<?php
+$to = "someone@example.com";       // Receiver's email
+$subject = "Test Email from PHP";
+$message = "Hello Atharva,\nThis is a test email sent from PHP!";
+$headers = "From: your_email@example.com";
+
+if (mail($to, $subject, $message, $headers)) {
+    echo "Email sent successfully!";
+} else {
+    echo "Email sending failed.";
+}
+?>
+
+✅ Step 2: HTML Email
+
+<?php
+$to = "someone@example.com";
+$subject = "Welcome Email";
+$message = "
+<html>
+<head><title>Welcome</title></head>
+<body>
+  <h1>Hello Atharva!</h1>
+  <p>This is an <b>HTML formatted</b> email from PHP.</p>
+</body>
+</html>
+";
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= "From: your_email@example.com";
+
+if (mail($to, $subject, $message, $headers)) {
+    echo "HTML Email sent!";
+} else {
+    echo "Sending failed.";
+}
+?>
+
+
+ Notes:
+*The mail() function works only if your server is configured with a mail server like
+   Sendmail, Postfix, or SMTP support (e.g., in XAMPP, it won’t work without setup).
+
+*For localhost (like XAMPP) testing, use tools like:
+
+*Sendmail with XAMPP
+
+*PHPMailer library (recommended for real use)
+
+
