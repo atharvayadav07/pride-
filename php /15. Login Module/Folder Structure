@@ -4,3 +4,12 @@ login_system/
 ├── login.php
 ├── dashboard.php
 └── logout.php
+
+
+ Security Tips:
+Always hash passwords using password_hash().
+
+Use prepared statements (e.g., mysqli_prepare) to prevent SQL injection (especially for production).
+
+Add validation and CSRF protection for forms in real applications.
+
