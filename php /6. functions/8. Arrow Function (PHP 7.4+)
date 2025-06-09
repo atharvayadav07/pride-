@@ -1,0 +1,4 @@
+<?php
+$square = fn($n) => $n * $n;
+echo $square(6);  // Output: 36
+?>
