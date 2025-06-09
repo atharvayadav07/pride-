@@ -1,0 +1,5 @@
+<?php
+$file = fopen("demo.txt", "a");
+fwrite($file, "\nThis line is appended.");
+fclose($file);
+?>
