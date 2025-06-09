@@ -1,0 +1,9 @@
+<?php
+$student = array(
+    "name" => "Atharva",
+    "age" => 20,
+    "city" => "Mumbai"
+);
+
+echo $student["name"];  // Output: Atharva
+?>
