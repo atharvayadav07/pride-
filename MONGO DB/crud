@@ -1,0 +1,31 @@
+// CREATE (Insert)
+db.users.insertOne({
+  name: "Atharva",
+  age: 21,
+  city: "Mumbai"
+})
+
+db.users.insertMany([
+  { name: "Amit", age: 22 },
+  { name: "Rahul", age: 24 }
+])
+
+// READ (Find)
+db.users.find()
+db.users.find({ age: 21 })
+db.users.find().pretty()
+
+// UPDATE
+db.users.updateOne(
+  { name: "Atharva" },
+  { $set: { age: 22 } }
+)
+
+db.users.updateMany(
+  { city: "Mumbai" },
+  { $set: { city: "Pune" } }
+)
+
+// DELETE
+db.users.deleteOne({ name: "Rahul" })
+db.users.deleteMany({ age: { $lt: 22 } })
