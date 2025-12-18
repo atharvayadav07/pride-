@@ -1,0 +1,32 @@
+db.users.aggregate([
+  // PROJECT – select & create fields
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      city: 1,
+      salary: 1,
+      yearlySalary: { $multiply: ["$salary", 12] }
+    }
+  },
+
+  // GROUP – group by city
+  {
+    $group: {
+      _id: "$city",
+      totalUsers: { $sum: 1 },
+      totalSalary: { $sum: "$salary" },
+      avgSalary: { $avg: "$salary" }
+    }
+  },
+
+  // SORT – highest salary first
+  {
+    $sort: { totalSalary: -1 }
+  },
+
+  // SKIP – skip first record
+  {
+    $skip: 1
+  }
+])
