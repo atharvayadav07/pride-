@@ -1,0 +1,32 @@
+/* 1. Create Single Field Index (Ascending) */
+db.users.createIndex({ name: 1 })
+
+/* 2. Create Single Field Index (Descending) */
+db.users.createIndex({ age: -1 })
+
+/* 3. Compound Index (Multiple Fields) */
+db.users.createIndex({ name: 1, age: -1 })
+
+/* 4. Unique Index */
+db.users.createIndex(
+  { email: 1 },
+  { unique: true }
+)
+
+/* 5. Text Index */
+db.posts.createIndex({ content: "text" })
+
+/* 6. Search Using Text Index */
+db.posts.find({ $text: { $search: "mongodb" } })
+
+/* 7. Show All Indexes */
+db.users.getIndexes()
+
+/* 8. Default Index (Auto Created by MongoDB) */
+{ _id: 1 }
+
+/* 9. Drop Index */
+db.users.dropIndex({ name: 1 })
+
+/* 10. Drop All Indexes (Except _id) */
+db.users.dropIndexes()
