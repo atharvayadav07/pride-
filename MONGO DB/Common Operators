@@ -1,0 +1,8 @@
+$gt   // greater than
+$lt   // less than
+$gte  // greater than equal
+$lte  // less than equal
+$ne   // not equal
+
+
+db.users.find({ age: { $gt: 20 } })
