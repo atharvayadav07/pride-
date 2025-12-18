@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Decision Making</title>
+</head>
+<body>
+
+<h2>Decision Making in JavaScript</h2>
+
+<script>
+  // 1️⃣ if-else example
+  let marks = 75;
+
+  if (marks >= 60) {
+    document.write("Result: Pass<br>");
+  } else {
+    document.write("Result: Fail<br>");
+  }
+
+  // 2️⃣ if-else if-else example
+  let score = 85;
+
+  if (score >= 90) {
+    document.write("Grade: A<br>");
+  } else if (score >= 75) {
+    document.write("Grade: B<br>");
+  } else if (score >= 60) {
+    document.write("Grade: C<br>");
+  } else {
+    document.write("Grade: Fail<br>");
+  }
+
+  // 3️⃣ switch statement example
+  let day = 3;
+  document.write("Day of Week: ");
+
+  switch(day) {
+    case 1:
+      document.write("Monday");
+      break;
+    case 2:
+      document.write("Tuesday");
+      break;
+    case 3:
+      document.write("Wednesday");
+      break;
+    case 4:
+      document.write("Thursday");
+      break;
+    case 5:
+      document.write("Friday");
+      break;
+    default:
+      document.write("Weekend");
+  }
+</script>
+
+</body>
+</html>
+
