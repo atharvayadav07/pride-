@@ -1,0 +1,29 @@
+// Variables
+var a = 10;          // old way
+let b = 20;          // block scoped
+const c = 30;        // constant
+
+// Data Types
+
+let name = "Atharva";     // String
+let age = 21;             // Number
+let isFit = true;         // Boolean
+let marks = 85.5;         // Number (float)
+
+let x = null;             // Null
+let y;                    // Undefined
+
+let fruits = ["Apple", "Banana"];   // Array
+let person = {                        // Object
+  name: "Atharva",
+  age: 21
+};
+
+// Type checking
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof isFit);
+console.log(typeof x);
+console.log(typeof y);
+console.log(typeof fruits);
+console.log(typeof person);
