@@ -1,0 +1,9 @@
+Drop Collection / Database
+  
+*Drop Collection
+  
+db.users.drop()
+
+*Drop Database
+  
+db.dropDatabase()
