@@ -1,1 +1,17 @@
+1️⃣ Open MongoDB Shell
+mongosh
 
+2️⃣ Show Databases
+show databases
+
+3️⃣ Create / Switch Database
+use myDatabase
+
+
+👉 Database is created automatically when data is added.
+
+4️⃣ Show Collections
+show collections
+
+5️⃣ Create Collection
+db.createCollection("users")
