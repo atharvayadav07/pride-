@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Loops & Control Statements</title>
+</head>
+<body>
+
+<h2>Nested Loops with break & continue</h2>
+
+<script>
+                                  // Nested loops: print multiplication table (1 to 3)
+  document.writeln("Multiplication Table (1 to 3):<br>");
+  for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 5; j++) {
+      // Skip printing when j is 3 (continue)
+      if (j === 3) {
+        continue;
+      }
+
+                                      // Stop inner loop if product > 10 (break)
+      if (i * j > 10) {
+        break;
+      }
+
+      document.writeln(i + " x " + j + " = " + (i * j));
+    }
+    document.writeln("<br>"); // New line after each i
+  }
+</script>
+
+</body>
+</html>
