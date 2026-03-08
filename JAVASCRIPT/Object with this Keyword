@@ -1,0 +1,20 @@
+let car = {
+    brand: "Toyota",
+    model: "Fortuner",
+    year: 2024,
+
+    showDetails: function () {
+        console.log("Brand: " + this.brand);
+        console.log("Model: " + this.model);
+        console.log("Year: " + this.year);
+    }
+};
+
+car.showDetails();
+
+
+
+// Output-
+Brand: Toyota
+Model: Fortuner
+Year: 2024
