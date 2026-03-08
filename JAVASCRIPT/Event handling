@@ -1,0 +1,44 @@
+event-project
+│
+├── index.html
+└── script.js
+
+
+
+
+//    index.html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling Example</title>
+</head>
+
+<body>
+
+<h1>JavaScript Event Handling</h1>
+
+<button id="btn">Click Me</button>
+
+<p id="message"></p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+//  script.js
+
+
+// selecting button
+let button = document.getElementById("btn");
+
+// event handling
+button.addEventListener("click", showMessage);
+
+// function
+function showMessage() {
+    document.getElementById("message").innerHTML = "Button was clicked!";
+}
